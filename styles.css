@@ -148,14 +148,14 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
   display: block;
 }
 
-.case-card__screenshot {
-  margin-top: 1.25rem;
-  border-radius: var(--r-md);
+.cases__proof {
+  margin-top: 0.5rem;
+  border-radius: var(--r-lg);
   overflow: hidden;
 }
-.case-card__screenshot img {
+.cases__proof img {
   width: 100%;
-  border-radius: var(--r-md);
+  border-radius: var(--r-lg);
   display: block;
 }
 
