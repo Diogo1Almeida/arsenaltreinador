@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git config *)",
+      "Bash(git commit *)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(npx --yes clean-css-cli styles.css -o styles.min.css)",
+      "Bash(npx --yes terser script.js -o script.min.js --compress --mangle)",
+      "Bash(npx clean-css-cli *)",
+      "Bash(npx terser *)",
+      "Bash(npx --yes @squoosh/cli --webp '{}' mockup.png prova.png produtov2.jpg)",
+      "Bash(npx --yes sharp-cli --input prova.png --output prova-opt.png --quality 75)",
+      "Bash(npx sharp-cli *)"
+    ]
+  }
+}
