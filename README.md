@@ -1,4 +1,4 @@
-# Arsenal do Treinador de Futsal — Landing Page
+# Arsenal do Treinador de Futebol — Landing Page
 
 ## Arquivos
 
@@ -35,7 +35,7 @@ Coloque o arquivo de imagem do produto na mesma pasta com o nome `mockup.png`.
 Se quiser usar outro nome ou formato, edite esta linha no `index.html`:
 
 ```html
-<img src="mockup.png" alt="Arsenal do Treinador de Futsal — mockup do produto" ...>
+<img src="mockup.png" alt="Arsenal do Treinador de Futebol — mockup do produto" ...>
 ```
 
 A imagem aparece na seção Hero (lado direito no desktop). Em mobile, o mockup é ocultado automaticamente para manter o foco no texto.
