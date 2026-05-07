@@ -139,11 +139,12 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
 ===================================================== */
 .what-is__mockup {
   margin-top: 2.5rem;
-  border-radius: var(--r-lg);
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .what-is__mockup img {
   width: 100%;
+  max-width: 720px;
   border-radius: var(--r-lg);
   display: block;
 }
