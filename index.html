@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#3B82F6">
   <title>Arsenal do Treinador de Futebol — Pare de improvisar treino</title>
+  <!-- Resource hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
+
+  <!-- Google Fonts — carrega sem bloquear renderização -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap"></noscript>
+
   <link rel="stylesheet" href="styles.css">
 
   <!-- Meta Pixel Code -->
@@ -65,7 +73,7 @@
         <p class="hero__trust">1.200+ treinadores aplicando • Acesso imediato • Garantia 7 dias</p>
       </div>
       <div class="hero__mockup">
-        <img src="mockup.png" alt="Arsenal do Treinador de Futebol — mockup do produto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="mockup.png" alt="Arsenal do Treinador de Futebol — mockup do produto" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="hero__mockup-fallback">
           <span>📦</span>
           <p>mockup.png</p>
