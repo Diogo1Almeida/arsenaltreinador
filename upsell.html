@@ -279,9 +279,95 @@
       margin: 3rem 0;
     }
 
+    /* ── PLANEJAMENTO ── */
+    .plan {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .plan__eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .plan__title {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(1.25rem, 3vw, 1.6rem);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .plan__desc {
+      font-size: 0.975rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* tabela */
+    .plan__table-wrapper { overflow-x: auto; margin-bottom: 2.5rem; }
+    .plan__table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    .plan__table th,
+    .plan__table td {
+      padding: 0.875rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    .plan__table th {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--surface-2);
+    }
+    .plan__table td { color: var(--ink-muted); }
+    .plan__table td:first-child { color: var(--ink); font-weight: 600; }
+
+    /* progressão */
+    .plan__progress { display: flex; flex-direction: column; gap: 1.25rem; }
+    .progress-card {
+      background: var(--surface-2);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      border-left: 3px solid var(--accent);
+    }
+    .progress-card__label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.375rem;
+      display: block;
+    }
+    .progress-card h4 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+    .progress-card p {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      line-height: 1.65;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       .product { padding: 1.5rem; }
+      .plan    { padding: 1.5rem; }
       .btn-cta { font-size: 1rem; padding: 1rem 1.5rem; }
     }
   </style>
@@ -338,7 +424,7 @@
 
         <ul class="checklist">
           <li><span class="checklist__check">✓</span>400 treinos organizados por objetivo</li>
-          <li><span class="checklist__check">✓</span>Força funcional para movimento de futebol</li>
+          <li><span class="checklist__check">✓</span>Força funcional para movimento de futsal</li>
           <li><span class="checklist__check">✓</span>Condicionamento aeróbico no ritmo real do jogo</li>
           <li><span class="checklist__check">✓</span>Velocidade, agilidade e reação</li>
           <li><span class="checklist__check">✓</span>Recuperação e mobilidade para menos lesão</li>
@@ -349,6 +435,60 @@
         </ul>
       </div>
 
+      <!-- PLANEJAMENTO -->
+      <div class="plan">
+        <span class="plan__eyebrow">EXEMPLO DE COMO FICA NA PRÁTICA</span>
+        <h2 class="plan__title">Veja como encaixa na sua semana — sem precisar de dia extra.</h2>
+        <p class="plan__desc">O condicionamento é feito antes ou depois do treino técnico do Arsenal. Não precisa de dia separado. Não precisa de academia. 15 a 20 minutos já fazem diferença.</p>
+
+        <div class="plan__table-wrapper">
+          <table class="plan__table">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Treino Técnico (Arsenal)</th>
+                <th>Treino Físico (Condicionamento)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Terça</td>
+                <td>Controle de Bola</td>
+                <td>15 min — Força Funcional (agachamento, prancha, salto)</td>
+              </tr>
+              <tr>
+                <td>Quinta</td>
+                <td>Finalizações Rápidas</td>
+                <td>15 min — Velocidade e Agilidade (ladder, cone, sprints)</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>Jogo ou Jogadas Ensaiadas</td>
+                <td>10 min — Recuperação e Mobilidade (alongamento ativo)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="plan__progress">
+          <div class="progress-card">
+            <span class="progress-card__label">Mês 1</span>
+            <h4>Base</h4>
+            <p>Exercícios de fundamento físico. Foco em ativar musculatura, corrigir postura e criar hábito de treino físico no elenco.</p>
+          </div>
+          <div class="progress-card">
+            <span class="progress-card__label">Mês 2</span>
+            <h4>Desenvolvimento</h4>
+            <p>Aumento de intensidade e volume. Circuitos combinados de força + resistência. Time começa a sentir diferença no segundo tempo.</p>
+          </div>
+          <div class="progress-card">
+            <span class="progress-card__label">Mês 3</span>
+            <h4>Pico</h4>
+            <p>Treinos de alta intensidade intervalada. Simulação do ritmo real do jogo. Time chega no campeonato no melhor condicionamento da temporada.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- OFERTA -->
       <div class="offer">
         <p class="offer__context">
@@ -356,14 +496,14 @@
           Mas como você acabou de entrar no Arsenal, tenho uma condição especial que aparece <strong>só nessa tela</strong> e nunca mais.
         </p>
         <p class="offer__old">R$ 67,00</p>
-        <p class="offer__price">R$ 37</p>
+        <p class="offer__price">R$ 27,90</p>
         <p class="offer__detail">Pagamento único · Acesso imediato · Só agora nessa tela</p>
       </div>
 
       <!-- CTA -->
       <div class="cta-block">
         <a href="https://wiapy.com/SEU-LINK-UPSELL" class="btn-cta">
-          ⚡ SIM! QUERO O CONDICIONAMENTO POR R$37 →
+          ⚡ SIM! QUERO O CONDICIONAMENTO POR R$27,90 →
         </a>
         <p class="cta-guarantee">🛡️ Garantia de 7 dias · Reembolso em 24h sem perguntas</p>
       </div>
